@@ -11,10 +11,10 @@ $( document ).ready(function() {
 		$( "#english-container" ).toggle();
 		
 		if($('#chinese-container').is(':visible')) {
-			$( "#nav-me" ).html("我");
-			$( "#nav-music" ).html("音乐");
-			$( "#nav-acting" ).html("演戏");
-			$( "#nav-modeling" ).html("模特");
+			$( "#nav-me" ).html("半梦剧社");
+		//	$( "#nav-music" ).html("音乐");
+		//	$( "#nav-acting" ).html("演戏");
+			$( "#nav-education" ).html("半梦学堂");
 			$( "#nav-language" ).html("English");
 			
 			
@@ -30,10 +30,10 @@ $( document ).ready(function() {
 			}
 			
 		}else{
-			$( "#nav-me" ).html("About Me");
-			$( "#nav-music" ).html("Music");
-			$( "#nav-acting" ).html("Acting");
-			$( "#nav-modeling" ).html("Modeling");
+			$( "#nav-me" ).html("Half-A-Dream Theater");
+		//	$( "#nav-music" ).html("Music");
+		//	$( "#nav-acting" ).html("Acting");
+			$( "#nav-education" ).html("Half-A-Dream Education");
 			$( "#nav-language" ).html("中文");
 			
 			$("#nav-me").attr("href", "#meSection");
@@ -81,38 +81,39 @@ $( document ).ready(function() {
 		  $(".navbar-collapse").collapse('hide');
 		}
 	  });
-  
-	
-	setInterval(function() {
-		 var curSrc= $("#profilePic").attr("src");
-		 if(curSrc === "http://www.liliwish.com/image/profilePic1.JPG"){
-			 
-			$("#profilePic").fadeOut(400, function() {
-				$("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic2.JPG");
-			}).fadeIn(400);
-		 }else if(curSrc === "http://www.liliwish.com/image/profilePic2.JPG"){
-			$("#profilePic").fadeOut(400, function() {
-				$("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic3.JPG");
-			}).fadeIn(400);
-		 }else if(curSrc === "http://www.liliwish.com/image/profilePic3.JPG"){
-			$("#profilePic").fadeOut(400, function() {
-				$("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic4.JPG");
-			}).fadeIn(400);
-		 }else if(curSrc === "http://www.liliwish.com/image/profilePic4.JPG"){
-			$("#profilePic").fadeOut(400, function() {
-				$("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic5.JPG");
-			}).fadeIn(400);
-		 }else if(curSrc === "http://www.liliwish.com/image/profilePic5.JPG"){
-			$("#profilePic").fadeOut(400, function() {
-				$("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic6.JPG");
-			}).fadeIn(400);
-		 }else{
-			$("#profilePic").fadeOut(400, function() {
-				$("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic1.JPG");
-			}).fadeIn(400);
-		 }
 
-	}, 5000);
+
+    //
+	// setInterval(function() {
+		 // var curSrc= $("#profilePic").attr("src");
+		 // if(curSrc === "http://www.liliwish.com/image/profilePic1.JPG"){
+			 
+			// $("#profilePic").fadeOut(400, function() {
+				// $("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic2.JPG");
+			// }).fadeIn(400);
+		 // }else if(curSrc === "http://www.liliwish.com/image/profilePic2.JPG"){
+			// $("#profilePic").fadeOut(400, function() {
+				// $("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic3.JPG");
+			// }).fadeIn(400);
+		 // }else if(curSrc === "http://www.liliwish.com/image/profilePic3.JPG"){
+			// $("#profilePic").fadeOut(400, function() {
+				// $("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic4.JPG");
+			// }).fadeIn(400);
+		 // }else if(curSrc === "http://www.liliwish.com/image/profilePic4.JPG"){
+			// $("#profilePic").fadeOut(400, function() {
+				// $("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic5.JPG");
+			// }).fadeIn(400);
+		 // }else if(curSrc === "http://www.liliwish.com/image/profilePic5.JPG"){
+			// $("#profilePic").fadeOut(400, function() {
+				// $("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic6.JPG");
+			// }).fadeIn(400);
+		 // }else{
+			// $("#profilePic").fadeOut(400, function() {
+				// $("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic1.JPG");
+			// }).fadeIn(400);
+		 // }
+
+	// }, 5000);
 	
 	
 	
@@ -186,7 +187,7 @@ $( document ).ready(function() {
 			$( "#nav-me" ).html("我");
 			$( "#nav-music" ).html("音乐");
 			$( "#nav-acting" ).html("演戏");
-			$( "#nav-modeling" ).html("模特");
+			$( "#nav-education" ).html("模特");
 			$( "#nav-language" ).html("English");
 			
 			
@@ -205,7 +206,7 @@ $( document ).ready(function() {
 			$( "#nav-me" ).html("About Me");
 			$( "#nav-music" ).html("Music");
 			$( "#nav-acting" ).html("Acting");
-			$( "#nav-modeling" ).html("Modeling");
+			$( "#nav-education" ).html("Modeling");
 			$( "#nav-language" ).html("中文");
 			
 			$("#nav-me").attr("href", "#meSection");
@@ -247,7 +248,7 @@ $( document ).ready(function() {
 			$( "#nav-me" ).html("我");
 			$( "#nav-music" ).html("音乐");
 			$( "#nav-acting" ).html("演戏");
-			$( "#nav-modeling" ).html("模特");
+			$( "#nav-education" ).html("模特");
 			$( "#nav-language" ).html("English");
 			
 			
@@ -266,7 +267,7 @@ $( document ).ready(function() {
 			$( "#nav-me" ).html("About Me");
 			$( "#nav-music" ).html("Music");
 			$( "#nav-acting" ).html("Acting");
-			$( "#nav-modeling" ).html("Modeling");
+			$( "#nav-education" ).html("Modeling");
 			$( "#nav-language" ).html("中文");
 			
 			$("#nav-me").attr("href", "#meSection");
