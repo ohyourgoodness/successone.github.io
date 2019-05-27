@@ -117,52 +117,52 @@ $( document ).ready(function() {
 	
 	
 	
-	setInterval(function() {
-		 var curSrc= $("#lifePic").attr("src");
-		 if(curSrc === "http://www.liliwish.com/image/lifePic1.JPG"){
+	// setInterval(function() {
+		 // var curSrc= $("#lifePic").attr("src");
+		 // if(curSrc === "http://www.liliwish.com/image/lifePic1.JPG"){
 			 
-			$("#lifePic").fadeOut(400, function() {
-				$("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic2.JPG");
-			}).fadeIn(400);
-		 }else if(curSrc === "http://www.liliwish.com/image/lifePic2.JPG"){
-			$("#lifePic").fadeOut(400, function() {
-				$("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic3.JPG");
-			}).fadeIn(400);
-		 }else if(curSrc === "http://www.liliwish.com/image/lifePic3.JPG"){
-			$("#lifePic").fadeOut(400, function() {
-				$("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic4.JPG");
-			}).fadeIn(400);
-		 }else if(curSrc === "http://www.liliwish.com/image/lifePic4.JPG"){
-			$("#lifePic").fadeOut(400, function() {
-				$("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic5.JPG");
-			}).fadeIn(400);
-		 }else{
-			$("#lifePic").fadeOut(400, function() {
-				$("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic1.JPG");
-			}).fadeIn(400);
-		 }
+			// $("#lifePic").fadeOut(400, function() {
+				// $("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic2.JPG");
+			// }).fadeIn(400);
+		 // }else if(curSrc === "http://www.liliwish.com/image/lifePic2.JPG"){
+			// $("#lifePic").fadeOut(400, function() {
+				// $("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic3.JPG");
+			// }).fadeIn(400);
+		 // }else if(curSrc === "http://www.liliwish.com/image/lifePic3.JPG"){
+			// $("#lifePic").fadeOut(400, function() {
+				// $("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic4.JPG");
+			// }).fadeIn(400);
+		 // }else if(curSrc === "http://www.liliwish.com/image/lifePic4.JPG"){
+			// $("#lifePic").fadeOut(400, function() {
+				// $("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic5.JPG");
+			// }).fadeIn(400);
+		 // }else{
+			// $("#lifePic").fadeOut(400, function() {
+				// $("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic1.JPG");
+			// }).fadeIn(400);
+		 // }
 
-	}, 5000);
+	// }, 5000);
 	
 	
 	
-	setInterval(function() {
-		 var curSrc= $("#profilePic-ch").attr("src");
-		 if(curSrc === "image/profilePic1.JPG"){
+	// setInterval(function() {
+		 // var curSrc= $("#profilePic-ch").attr("src");
+		 // if(curSrc === "image/profilePic1.JPG"){
 			 
-			$("#profilePic-ch").fadeOut(400, function() {
-				$("#profilePic-ch").attr('src',"image/profilePic2.JPG");
-			}).fadeIn(400);
-		 }else if(curSrc === "image/profilePic2.JPG"){
-			$("#profilePic-ch").fadeOut(400, function() {
-				$("#profilePic-ch").attr('src',"image/profilePic1.JPG");
-			}).fadeIn(400);
-		 }else{
-			 $("#profilePic-ch").attr("src", "image/profilePic1.JPG");
-		 }
+			// $("#profilePic-ch").fadeOut(400, function() {
+				// $("#profilePic-ch").attr('src',"image/profilePic2.JPG");
+			// }).fadeIn(400);
+		 // }else if(curSrc === "image/profilePic2.JPG"){
+			// $("#profilePic-ch").fadeOut(400, function() {
+				// $("#profilePic-ch").attr('src',"image/profilePic1.JPG");
+			// }).fadeIn(400);
+		 // }else{
+			 // $("#profilePic-ch").attr("src", "image/profilePic1.JPG");
+		 // }
 		 
 		  
-	}, 5000);
+	// }, 5000);
 	
 
 
