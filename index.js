@@ -21,6 +21,7 @@ $( document ).ready(function() {
 			$("#nav-me").attr("href", "#meSection-ch");
 			$("#nav-music").attr("href", "#musicSection-ch");
 			$("#nav-acting").attr("href", "#actingSection-ch");
+			$("#nav-education").attr("href", "#educatioinSection-ch");
 			
 			var youtube = document.querySelectorAll( ".youtube" );
 			for (var i = 0; i < youtube.length; i++) {
@@ -71,8 +72,9 @@ $( document ).ready(function() {
 
 	$(".navbar-nav li a").click(function (event) {
 
-		document.getElementById("wangyiMusicListDiv").innerHTML = "";
-		document.getElementById("wangyiMusicListDiv").innerHTML = "<iframe id = \"wangyiMusicList\" frameborder=\"no\" border=\"0\" marginwidth=\"0\" marginheight=\"0\" width=100% height=450 src=\"//music.163.com/outchain/player?type=1&id=35737218&auto=0&height=430\"></iframe>";
+    //  change wangyiyun
+	//	document.getElementById("wangyiMusicListDiv").innerHTML = "";
+	//	document.getElementById("wangyiMusicListDiv").innerHTML = "<iframe id = \"wangyiMusicList\" frameborder=\"no\" border=\"0\" marginwidth=\"0\" marginheight=\"0\" width=100% height=450 src=\"//music.163.com/outchain/player?type=1&id=35737218&auto=0&height=430\"></iframe>";
 		
 	
     // check if window is small enough so dropdown is created
@@ -83,88 +85,6 @@ $( document ).ready(function() {
 	  });
 
 
-    //
-	// setInterval(function() {
-		 // var curSrc= $("#profilePic").attr("src");
-		 // if(curSrc === "http://www.liliwish.com/image/profilePic1.JPG"){
-			 
-			// $("#profilePic").fadeOut(400, function() {
-				// $("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic2.JPG");
-			// }).fadeIn(400);
-		 // }else if(curSrc === "http://www.liliwish.com/image/profilePic2.JPG"){
-			// $("#profilePic").fadeOut(400, function() {
-				// $("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic3.JPG");
-			// }).fadeIn(400);
-		 // }else if(curSrc === "http://www.liliwish.com/image/profilePic3.JPG"){
-			// $("#profilePic").fadeOut(400, function() {
-				// $("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic4.JPG");
-			// }).fadeIn(400);
-		 // }else if(curSrc === "http://www.liliwish.com/image/profilePic4.JPG"){
-			// $("#profilePic").fadeOut(400, function() {
-				// $("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic5.JPG");
-			// }).fadeIn(400);
-		 // }else if(curSrc === "http://www.liliwish.com/image/profilePic5.JPG"){
-			// $("#profilePic").fadeOut(400, function() {
-				// $("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic6.JPG");
-			// }).fadeIn(400);
-		 // }else{
-			// $("#profilePic").fadeOut(400, function() {
-				// $("#profilePic").attr('src',"http://www.liliwish.com/image/profilePic1.JPG");
-			// }).fadeIn(400);
-		 // }
-
-	// }, 5000);
-	
-	
-	
-	// setInterval(function() {
-		 // var curSrc= $("#lifePic").attr("src");
-		 // if(curSrc === "http://www.liliwish.com/image/lifePic1.JPG"){
-			 
-			// $("#lifePic").fadeOut(400, function() {
-				// $("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic2.JPG");
-			// }).fadeIn(400);
-		 // }else if(curSrc === "http://www.liliwish.com/image/lifePic2.JPG"){
-			// $("#lifePic").fadeOut(400, function() {
-				// $("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic3.JPG");
-			// }).fadeIn(400);
-		 // }else if(curSrc === "http://www.liliwish.com/image/lifePic3.JPG"){
-			// $("#lifePic").fadeOut(400, function() {
-				// $("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic4.JPG");
-			// }).fadeIn(400);
-		 // }else if(curSrc === "http://www.liliwish.com/image/lifePic4.JPG"){
-			// $("#lifePic").fadeOut(400, function() {
-				// $("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic5.JPG");
-			// }).fadeIn(400);
-		 // }else{
-			// $("#lifePic").fadeOut(400, function() {
-				// $("#lifePic").attr('src',"http://www.liliwish.com/image/lifePic1.JPG");
-			// }).fadeIn(400);
-		 // }
-
-	// }, 5000);
-	
-	
-	
-	// setInterval(function() {
-		 // var curSrc= $("#profilePic-ch").attr("src");
-		 // if(curSrc === "image/profilePic1.JPG"){
-			 
-			// $("#profilePic-ch").fadeOut(400, function() {
-				// $("#profilePic-ch").attr('src',"image/profilePic2.JPG");
-			// }).fadeIn(400);
-		 // }else if(curSrc === "image/profilePic2.JPG"){
-			// $("#profilePic-ch").fadeOut(400, function() {
-				// $("#profilePic-ch").attr('src',"image/profilePic1.JPG");
-			// }).fadeIn(400);
-		 // }else{
-			 // $("#profilePic-ch").attr("src", "image/profilePic1.JPG");
-		 // }
-		 
-		  
-	// }, 5000);
-	
-
 
 	$( "#nav-language" ).click(function() {
 		
@@ -173,125 +93,6 @@ $( document ).ready(function() {
 	});
 	
 	
-	/*
-	$("#language-chinese").mouseover(function(){
-		this.style.cursor = 'pointer'
-	});
-	
-	$( "#language-chinese" ).click(function() {
-		
-		$( "#chinese-container" ).toggle();
-		$( "#english-container" ).toggle();
-		
-		if($('#chinese-container').is(':visible')) {
-			$( "#nav-me" ).html("我");
-			$( "#nav-music" ).html("音乐");
-			$( "#nav-acting" ).html("演戏");
-			$( "#nav-education" ).html("模特");
-			$( "#nav-language" ).html("English");
-			
-			
-			$("#nav-me").attr("href", "#meSection-ch");
-			$("#nav-music").attr("href", "#musicSection-ch");
-			$("#nav-acting").attr("href", "#actingSection-ch");
-			
-			var youtube = document.querySelectorAll( ".youtube" );
-			for (var i = 0; i < youtube.length; i++) {
-				if(youtube[i].firstChild.localName === "iframe"){
-					$( "#" + youtube[i].id+"-iframe" )[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-				}
-			}
-			
-		}else{
-			$( "#nav-me" ).html("About Me");
-			$( "#nav-music" ).html("Music");
-			$( "#nav-acting" ).html("Acting");
-			$( "#nav-education" ).html("Modeling");
-			$( "#nav-language" ).html("中文");
-			
-			$("#nav-me").attr("href", "#meSection");
-			$("#nav-music").attr("href", "#musicSection");
-			$("#nav-acting").attr("href", "#actingSection");
-
-			var youku = document.querySelectorAll( ".youku" );
-	
-			for (var i = 0; i < youku.length; i++) {
-					
-				console.log("youku[i].id = " + youku[i].id);
-					
-				$('#' + youku[i].id + '-youku').attr('src',''); 
-				$('#' + youku[i].id + '-playbutton').show();
-				$('#' + youku[i].id + '-thumbnail').show();
-				$('#' + youku[i].id ).show();
-				$('#' + youku[i].id + '-youku').hide();
-
-			}
-
-		}
-
-	});
-
-	
-	
-	
-	
-	$("#language-english").mouseover(function(){
-		this.style.cursor = 'pointer'
-	});
-	
-	$( "#language-english" ).click(function() {
-		
-		$( "#chinese-container" ).toggle();
-		$( "#english-container" ).toggle();
-		
-		if($('#chinese-container').is(':visible')) {
-			$( "#nav-me" ).html("我");
-			$( "#nav-music" ).html("音乐");
-			$( "#nav-acting" ).html("演戏");
-			$( "#nav-education" ).html("模特");
-			$( "#nav-language" ).html("English");
-			
-			
-			$("#nav-me").attr("href", "#meSection-ch");
-			$("#nav-music").attr("href", "#musicSection-ch");
-			$("#nav-acting").attr("href", "#actingSection-ch");
-			
-			var youtube = document.querySelectorAll( ".youtube" );
-			for (var i = 0; i < youtube.length; i++) {
-				if(youtube[i].firstChild.localName === "iframe"){
-					$( "#" + youtube[i].id+"-iframe" )[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-				}
-			}
-			
-		}else{
-			$( "#nav-me" ).html("About Me");
-			$( "#nav-music" ).html("Music");
-			$( "#nav-acting" ).html("Acting");
-			$( "#nav-education" ).html("Modeling");
-			$( "#nav-language" ).html("中文");
-			
-			$("#nav-me").attr("href", "#meSection");
-			$("#nav-music").attr("href", "#musicSection");
-			$("#nav-acting").attr("href", "#actingSection");
-
-			var youku = document.querySelectorAll( ".youku" );
-	
-			for (var i = 0; i < youku.length; i++) {
-					
-				console.log("youku[i].id = " + youku[i].id);
-					
-				$('#' + youku[i].id + '-youku').attr('src',''); 
-				$('#' + youku[i].id + '-playbutton').show();
-				$('#' + youku[i].id + '-thumbnail').show();
-				$('#' + youku[i].id ).show();
-				$('#' + youku[i].id + '-youku').hide();
-
-			}
-
-		}
-
-	});
-	*/
 
 	//resize the logo size to fit the navibar, the original logo size must be set smaller than the default navibar size.
 	var navbar = document.getElementById('container-fluid');
