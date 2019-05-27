@@ -1,0 +1,1243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+
+    <!-- Bootstrap CSS -->
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->	
+    <script src="http://www.half-a-dream.com/jquery-3.2.1.min.js"></script>
+		
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+ 	<script src="index.js"></script>
+	
+    <link rel="bookmark"  type="image/x-icon"  href="http://www.half-a-dream.com/half-a-dream-favicon-12d.ico"/>
+
+    <link rel="shortcut icon" href="http://www.half-a-dream.com/lili_16_favicon.ico">
+	
+	<title>Half Dream</title>
+	
+	<style>
+	    .varcss{
+			--video-screen-height: 100%;
+			--contact-image-margin: 0 0 0 100px;
+		}
+		
+		.subtitle1 {
+			height:60px;
+			font-size:20px;
+			text-align: center; 
+			left: 50%;	
+		}
+		
+		.subtitle1-ch {	
+			height:60px;
+			font-size:20px;
+			text-align: center; 
+			left: 50%;	
+		}
+		
+		.subtitle2 {
+			height:60px;
+			font-size:15px;
+			text-align: center; 
+			left: 50%;	
+		}
+		
+		.subtitle2-ch {
+			height:60px;
+			font-size:15px;
+			text-align: center; 
+			left: 50%;	
+		}
+
+		.font1 {
+			text-align: center; 
+			left: 50%;
+			font-size:20px;
+			face: sans-serif;
+		}
+		.font2 {
+			text-align: center; 
+			left: 50%;
+			font-size:15px;
+			face: sans-serif;
+
+		}
+		
+		.font3 {
+			text-align: center; 
+			left: 50%;
+			font-size:15px;
+			face: sans-serif;
+
+		}
+		
+		.font4 {
+			left: 50%;
+			font-size:15px;
+			face: sans-serif;
+
+		}
+
+		.sound1 {
+			width: 40px;
+			height: 40px;
+		}
+
+		.video-screen {
+			width:80%;
+			height: var(--video-screen-height);
+			display:block; 
+			margin: 0 auto;	
+		}
+
+		.video-title {
+			text-align: center; 
+			face: sans-serif;
+			font-size: 15px; 
+			font-weight: 300;
+		}
+		
+		
+		.profilePicCSS{
+			  -webkit-transition: opacity  ease-in-out;
+			  -moz-transition: opacity ease-in-out;
+			  -o-transition: opacity  ease-in-out;
+			  transition: opacity  ease-in-out;
+		}
+		.contactPicCSS{
+			 width:30px;
+			 height: 30px;
+		}
+		.weiboCSS{
+		
+		}
+		
+		
+		.youtube {
+			background-color: #000;
+			margin-bottom: 30px;
+			position: relative;
+			padding-top: 56.25%;
+			overflow: hidden;
+			cursor: pointer;
+		}
+		.youtube img {
+			width: 100%;
+			top: -16.84%;
+			left: 0;
+			opacity: 0.7;
+		}
+		.youtube .play-button {
+			width: 90px;
+			height: 60px;
+			background-color: #333;
+			box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+			z-index: 1;
+			opacity: 0.8;
+			border-radius: 6px;
+		}
+		.youtube .play-button:before {
+			content: "";
+			border-style: solid;
+			border-width: 15px 0 15px 26.0px;
+			border-color: transparent transparent transparent #fff;
+		}
+		.youtube img,
+		.youtube .play-button {
+			cursor: pointer;
+		}
+		.youtube img,
+		.youtube iframe,
+		.youtube .play-button,
+		.youtube .play-button:before {
+			position: absolute;
+		}
+		.youtube .play-button,
+		.youtube .play-button:before {
+			top: 50%;
+			left: 50%;
+			transform: translate3d( -50%, -50%, 0 );
+		}
+		.youtube iframe {
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
+		
+		.video-list-screen {
+			top: 0;
+			left: 0;
+		}
+		
+		
+        .youkuCSS {
+			--iframe-width:100%;
+			--iframe-width:100%;
+		}
+
+		.youku {
+			background-color: #000;
+			margin-bottom: 30px;
+			position: relative;
+			width : var(--iframe-width) ;	
+		    height: var(--iframe-height);			
+			overflow: hidden;
+			cursor: pointer;	
+			text-align: center			
+		}
+		
+		.youku img {
+			width: 100%;
+			left: 0;
+			opacity: 0.7;
+		}
+		
+		.youku-video {
+			width: 100%;
+			left: 0;
+			opacity: 0.7;
+		}
+		
+		.youku .play-button {
+			width: 90px;
+			height: 60px;
+			background-color: #333;
+			box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+			z-index: 1;
+			opacity: 0.8;
+			border-radius: 6px;
+		}
+		.youku .play-button:before {
+			content: "";
+			border-style: solid;
+			border-width: 15px 0 15px 26.0px;
+			border-color: transparent transparent transparent #fff;
+		}
+
+		.youku .play-button {
+			cursor: pointer;
+		}
+
+		.youku .play-button,
+		.youku .play-button:before {
+			position: absolute;
+		}
+		.youku .play-button,
+		.youku .play-button:before {
+			top: 50%;
+			left: 50%;
+			transform: translate3d( -50%, -50%, 0 );
+		}
+				
+		.youku-iframe {
+			background-color: #000;
+			margin-bottom: 30px;
+			position: relative;
+			width : var(--iframe-width) ;	
+		    height: var(--iframe-height);		
+			overflow: hidden;
+			cursor: pointer;	
+			text-align: center			
+		}
+		.space1 {
+			height: 30px;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
+		
+
+		
+    </style>
+	
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?8053ebd6b8636cb9301b0cf5574f880d";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+
+	
+	
+  </head>
+  <body>
+  
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div id  = "container-fluid" class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-left" href="#">
+		<img id = "logo"  style = "width:40px; height:40px;display: inline-block;" src="http://www.half-a-dream.com/image/half-a-dream-logo.jpg" />
+	  </a>
+	  <p class="navbar-text" style = "position: absolute; left: 49%; display: inline-block; font-size: 20px; font-weight: 600;">Half Dream
+	  </p>
+    </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+	    <li><a href="#meSection" id = "nav-me">About Me</a></li>
+        <li><a href="#musicSection" id = "nav-music">Music</a></li>
+		<li><a href="#actingSection" id = "nav-acting">Acting</a></li>
+		<li><a href="#" id = "nav-modeling">Modeling</a></li>
+		<li><a href="#" id = "nav-language">中文</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  
+<div class="container" id="english-container"> 
+    <div class="row"><!-- leave space for the navibar -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+    <div class="row">
+	  <div class="col-sm-1"></div>	 
+	  <div class="col-sm-5" id = "nameDiv" >
+	    <br><br><br><br><br>
+		<div style = "font-size:60px; text-align: center; left: 50%">Li Li</div>
+		<div class = "font1" > "I am a silkworm with Tech shell and Music heart</div>
+		<div class = "font1" >  and I will metamorphose into a singing butterfly"</div>
+		<br>
+		<div class = "font1" > free lancer</div>
+		<div class = "font1"> music composor</div>
+		<div class = "font1"> actor</div>
+		<div class = "font1"> model</div>
+		
+		<br>
+		<div id = "contactPicDiv" style = "text-align: center;"> 
+		    <img id = "ins" class = "contactPicCSS" src="http://www.half-a-dream.com/image/Ins.png" />
+			&nbsp;
+			&nbsp;
+			<img id = "youtube" class = "contactPicCSS" src="http://www.half-a-dream.com/image/youtube.png" />
+			&nbsp;
+			&nbsp;
+			<img id = "weibo" class = "contactPicCSS" src="http://www.half-a-dream.com/image/weibo.png" />
+			&nbsp;
+			&nbsp;
+			<img id = "wangyi" class = "contactPicCSS" src="http://www.half-a-dream.com/image/wangyi.png" />
+		</div>
+		<br>
+		<div id = "contactEmailDiv" style = "text-align: center;"> 
+			<div class = "font2"> email: wishlili66@outlook.com</div>		
+		</div>
+		
+		<br>
+		<div style = "text-align: center;"> 
+			<div class = "font2"> Agent & Partner Wanted</div>		
+		</div>
+		
+		<br><br><br>	
+	  </div>
+      <div class="col-sm-5" id = "profilePic1Div">	    
+			<img id = "profilePic" class = "profilePicCSS" style = "width:100%; height-max:600px; overflow: hidden;" src="http://www.half-a-dream.com/image/profilePic1.JPG" />
+	  </div> 	  
+	  <div class="col-sm-1"></div>
+	</div>
+	
+	
+	<!-- language
+	<div class="row">
+	  <div id = "meSection" class="col-sm-12 subtitle1" style = "text-align: center; left: 46%"></div>	
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-12 subtitle1" style = "text-align: center; left: 42%">LANGUAGE&nbsp;OPTION&nbsp;语&nbsp;言&nbsp;选&nbsp;择&nbsp;</div>	
+	  <br><br>
+	</div>
+	<div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div  class="col-sm-10">
+		 <div class = "video-title" id="language-chinese">中文</div> 
+       </div>
+	   <div class="col-sm-1"></div>	
+	</div>
+	<div class="row">
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	-->
+	
+	
+	<!-- About Me -->
+	<div class="row">
+	  <div id = "meSection" class="col-sm-12 subtitle1" style = "text-align: center; left: 46%"></div>	
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-12" >
+		<div class="subtitle1">ABOUT&nbsp;ME</div>	
+	  </div>	
+	  <br><br><br>
+	</div>
+	
+	
+	<div class="row">
+	  <div  class="col-sm-1"></div>	
+	 
+      <div class="col-sm-5">
+	        <div class = "font1" style = "text-align: left;" >So far my life is divided into 3 stages: </div>
+			<div class = "font1" style = "text-align: center;" >Music&Acting, Tech&Coding, Music&Acting </div>
+			<br>
+	        <div class = "font3" style = "text-align: left;" >After studying </div>
+			<div class = "font3" style = "text-align: center;">Chinese Dulcimer for 10 years</div>
+		    <div class = "font3" style = "text-align: center;">Choir Singing for 6 years</div>
+			<div class = "font3" style = "text-align: center;">Theater Acting for 4 years</div>
+			<div class = "font3" style = "text-align: left;">Then</div>
+			<div class = "font3" style = "text-align: center;">I decided to study Computer Science</div>
+		
+		    <!--
+			<div class = "font3" style = "text-align: center;">When I am doing technology, because I can feel the power of those little tiny semi-conductors and line by line codes.</div>
+			-->
+	        <div class = "font3" style = "text-align: center;"> Bachelor Degree in China and Finland</div>
+			<div class = "font3" style = "text-align: center;"> Master Degree from Brown University in the US.</div>
+			<div class = "font3" style = "text-align: center;"> Software Developer now at Oracle Corporation</div>	
+		
+			<div class = "font3" style = "text-align: left;">Now</div>
+	        <div class = "font3" style = "text-align: center;">Have written over 100 original songs</div>
+			<div class = "font3" style = "text-align: center;">Over 20 demos on my Youtube channel</div>
+			<div class = "font3" style = "text-align: center;">Keep Singing and Acting on stage</div>	
+			<br>
+			<div class = "font3">My music inspired by Chinese traditional melody and sound of nature, it reflects the philosophy of humanity and simplicity of joy. Since middle school, I began to write and sing my own songs. The instrumental is synthesized by software entirely.</div>	
+			<br>
+			<div class = "font3">I will appreciate it if any producer and agent who would like to help me release an album and help me with my singing career.</div>	
+            <div class = "font3"> </div>	
+			<br>
+			<br>			
+	  </div> 
+	  
+	  <div class="col-sm-5" id = "lifePic1Div">	  
+           <div style = "overflow: hidden;">	  
+			<img id = "lifePic" class = "profilePicCSS" style = "width:100%; height-max:600px;" src="http://www.half-a-dream.com/image/lifePic1.JPG" />
+			</div>
+	  </div> 	  
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	
+
+	
+	<!-- MUSIC -->
+	
+	
+	<div class="row">
+	  <div id = "musicSection" class="col-sm-12 subtitle1" style = "text-align: center; left: 46%"></div>	
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-12">
+		<div class="subtitle1">MUSIC</div>	
+	  </div>	
+	  <br><br>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-12">
+		<div class="subtitle2">Original&nbsp;Songs&nbsp;Demo</div>	
+	  </div>	
+	  <br>
+	</div>
+	
+	
+	<div class="row">
+	  <div  class="col-sm-1"></div>	
+	 
+      <div id = "gridWidth" class="col-sm-5">
+	  <br>
+	        <div class = "font1"> Philosophy, Nature and Joy </div>
+			<div class = "font3"> —— Li Li'music. </div>
+	        <div class = "font3"> Melogy inspired by Chinese traditional instruments, especially Pentatonic scales</div>
+			<div class = "font3"> Lyric inspired by Philosophy from life and Nature from space </div>	
+            <div class = "font3"> Instrumental composed from Computer Software entirely, you don't have to know how to play piano and guitar to compose </div>	
+			<br><br>			
+	  </div> 
+	  <div  class="col-sm-5">
+	  
+	      <div id = "video-theday" class = "youtube" data-embed="Q56zG4MFXzY">
+			<div class="play-button"></div> 
+		  </div>  
+		  <div class = "video-title">The Day (English)</div>
+		  
+		 
+		 
+	  </div> 
+	   
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+
+	
+	<div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div  class="col-sm-5">
+	      <div id = "video-royal" class = "youtube" data-embed="oGQsty_gtZY">
+			<div class="play-button"></div> 
+		  </div>  
+		  <div class = "video-title">I Cannot Be Royal (English)</div>
+		  <div class = "space1"></div>
+	  </div> 
+	  <div  class="col-sm-5">
+	      <div id = "video-panda" class = "youtube" data-embed="FT3K4Ivmc2w">
+			<div class="play-button"></div> 
+		  </div>  
+		  <div class = "video-title">Panda (Chinese)</div>
+	  </div> 
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+    <div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	
+	<div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div class="col-sm-5">
+	      <div id = "video-xiangqin" class = "youtube" data-embed="ZKt5ch6Y9gE">
+		    <div class="play-button"></div> 
+		  </div>  
+	      <div class = "video-title">Ms Jin, Please Don't Ask Me To Date (Chinese)</div>
+		  <div class = "space1"></div>
+	  </div> 
+	  <div class="col-sm-5">
+	      <div id = "video-tremble" class = "youtube" data-embed="FNXFD-0tzv4">
+		    <div class="play-button"></div> 
+		  </div>  
+	      <div class = "video-title">Tremble (EDM)</div>
+	  </div> 
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	<div class="row">
+	  <div class="col-sm-12">
+		<div class="subtitle2">Live&nbsp;Performance</div>	
+	  </div>	
+	  <br><br><br>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div  class="col-sm-5">
+	      <div id = "video-loveyourself" class = "youtube" data-embed="I8FQxsClplo">
+			<div class="play-button"></div> 
+		  </div>  
+		  <div class = "video-title">Love Yourself (English)</div>
+		  <div class = "space1"></div>
+	  </div> 
+	  <div class="col-sm-5">
+	      <div id = "video-haoxiangni" class = "youtube" data-embed="VYV8ehkKenE">
+		    <div class="play-button"></div> 
+		  </div>  
+	      <div class = "video-title">Miss you so much (Chinese)</div>
+	  </div> 
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+
+	
+	<div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div  class="col-sm-5">
+	      <div id = "video-yezi" class = "youtube" data-embed="U-FhPIbzpu4">
+			<div class="play-button"></div> 
+		  </div>  
+		  <div class = "video-title">Wild Child</div>
+		  <div class = "space1"></div>
+	  </div> 
+	  <div class="col-sm-5">
+	      <div id = "video-juanzhulian" class = "youtube" data-embed="uFq60Bauc-k">
+		    <div class="play-button"></div> 
+		  </div>  
+	      <div class = "video-title">Juan Zhu Lian</div>
+	  </div> 
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+
+	<div class="row">
+	  <div class="col-sm-12">
+	    <div class="subtitle2">Remix</div>	
+	  </div>	
+	  <br><br><br>
+	</div>
+	
+	
+	<div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div  class="col-sm-5">
+	      <div id = "video-lilian" class = "youtube" data-embed="tr1VItjnYkU">
+			<div class="play-button"></div> 
+		  </div>  
+		  <div class = "video-title">Miss Li Li An</div>
+		  <div class = "space1"></div>
+	  </div> 
+	  <div class="col-sm-5">
+	      <div id = "video-yinweiaiqing" class = "youtube" data-embed="jQhzp2xz748">
+		    <div class="play-button"></div> 
+		  </div>  
+	      <div class = "video-title">Because of love</div>
+	  </div> 
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	<div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div  class="col-sm-5">
+	      <div id = "video-beitaokong" class = "youtube" data-embed="lpMvRBX_ZiI">
+			<div class="play-button"></div> 
+		  </div>  
+		  <div class = "video-title">Feel Exhausted Completely</div>
+		  <div class = "space1"></div>
+	  </div> 
+	  <div class="col-sm-5">
+	      <div id = "video-zijiu" class = "youtube" data-embed="bGwvM2jctIE">
+		    <div class="play-button"></div> 
+		  </div>  
+	      <div class = "video-title">Self Rescue During Chinese New Year </div>
+	  </div> 
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	
+	<!-- ACTING -->
+	
+    <div class="row">
+	  <div id = "actingSection" class="col-sm-12 subtitle1" style = "text-align: center; left: 46%"></div>	
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-12">
+		<div class="subtitle1">ACTING</div>	
+	  </div>	
+	  
+	  <br><br><br>
+	</div>
+	
+	
+	<div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div  class="col-sm-5">
+	      <div id = "video-mv" class = "youtube" data-embed="m7phyitMYSE">
+			<div class="play-button"></div> 
+		  </div>  
+		  <div class = "video-title">Male Lead -  Marcus</div>
+		  <div class = "space1"></div>
+	  </div> 
+	  <div class="col-sm-5">
+	      <div id = "video-zuichibi" class = "youtube" data-embed="kHP4JlPHRyY">
+		    <div class="play-button"></div> 
+		  </div>  
+	      <div class = "video-title">Male Lead - Zhu Ge Liang</div>
+	  </div> 
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	
+	<div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div  class="col-sm-10">
+		
+		 <div class = "video-title">More Video & Music, Please Visit:</div>
+		 <br>
+	     <div id = "contactPicDiv2" style = "text-align: center;"> 
+		    <img id = "ins2" class = "contactPicCSS" src="http://www.half-a-dream.com/image/Ins.png" />
+			&nbsp;
+			&nbsp;
+			<img id = "youtube2" class = "contactPicCSS" src="http://www.half-a-dream.com/image/youtube.png" />
+			&nbsp;
+			&nbsp;
+			<img id = "weibo2" class = "contactPicCSS" src="http://www.half-a-dream.com/image/weibo.png" />
+			&nbsp;
+			&nbsp;
+			<img id = "wangyi2" class = "contactPicCSS" src="http://www.half-a-dream.com/image/wangyi.png" />
+			
+		</div>	     
+       </div>
+	   <div class="col-sm-1"></div>	
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+
+
+	
+</div>
+
+
+<div class="container" id="chinese-container" style = "display : none">
+    <div class="row"><!-- leave space for the navibar -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+    <div class="row">
+	  <div class="col-sm-1"></div>	 
+	  <div class="col-sm-5" id = "nameDiv-ch" >
+	    <br><br><br><br><br><br>
+		<div style = "font-size:60px; text-align: center; left: 50%">李礼</div>
+		<div class = "font1" > "我是一只蛹，</div>
+		<div class = "font1" > "披着科技的躯壳，却拥有音乐的内心，</div>
+		<div class = "font1" >  终有一天，在我的歌声里，破茧成蝶。"</div>
+		<br>
+		<div class = "font1" > 自由职业</div>
+		<div class = "font1"> 词曲创作 编曲和声</div>
+		<div class = "font1"> 歌手 演员</div>
+		<div class = "font1"> 模特</div>
+		<br>
+		<div id = "contactPicDiv" style = "text-align: center;"> 	
+		    <img id = "weibo-ch" class = "contactPicCSS" src="http://www.half-a-dream.com/image/weibo.png" />
+			&nbsp;
+			&nbsp;
+		    <img id = "wangyi-ch" class = "contactPicCSS" src="http://www.half-a-dream.com/image/wangyi.png" />
+			&nbsp;
+			&nbsp;
+			<img id = "ins-ch" class = "contactPicCSS" src="http://www.half-a-dream.com/image/Ins.png" />
+			&nbsp;
+			&nbsp;
+			<img id = "youtube-ch" class = "contactPicCSS" src="http://www.half-a-dream.com/image/youtube.png" />
+		</div>
+		<br>
+		<div id = "contactEmailDiv" style = "text-align: center;"> 
+			<div class = "font2"> 邮箱: wishlili66@outlook.com</div>		
+		</div>
+		
+		<br>
+		<div style = "text-align: center;"> 
+			<div class = "font2"> 寻求演艺经纪公司 音乐经纪公司 期待签约</div>		
+		</div>
+		
+		<br><br><br>		
+	  </div>
+      <div class="col-sm-5" id = "profilePic1Div-ch">	    
+			<img id = "profilePic-ch" class = "profilePicCSS" style = "width:100%; height-max:100%" src="http://www.half-a-dream.com/image/profilePic1.JPG" />
+	  </div> 	  
+	  <div class="col-sm-1"></div>
+	</div>
+	
+	
+	<!-- language 
+	<div class="row">
+	  <div id = "meSection" class="col-sm-12 subtitle1" style = "text-align: center; left: 46%"></div>	
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-12 subtitle1" style = "text-align: center; left: 42%">语&nbsp;言&nbsp;选&nbsp;择&nbsp;LANGUAGE&nbsp;OPTION&nbsp;</div>	
+	  <br><br>
+	</div>
+	<div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div  class="col-sm-10">
+		 <div class = "video-title" id="language-english">ENGLISH</div> 
+       </div>
+	   <div class="col-sm-1"></div>	
+	</div>
+	<div class="row">
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	-->
+	
+	<!-- About Me -->
+	<div class="row">
+	  <div id = "meSection-ch" class="col-sm-12 subtitle1" style = "text-align: center; left: 46%"></div>	
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-12" >
+	  <div class="subtitle1-ch" >我</div>	
+	  </div>	
+	  <br><br>
+	</div>
+	
+	
+	<div class="row">
+	  <div  class="col-sm-1"></div>	
+	 
+      <div class="col-sm-5">
+	        <div class = "font1" style = "text-align: left;" >我经历的三个阶段: </div>
+			<div class = "font1" style = "text-align: center;" >音乐和表演, 理工科技男, 音乐和表演 </div>
+			<br>
+	        <div class = "font3" style = "text-align: left;" >从小学开始学习 </div>
+			<div class = "font3" style = "text-align: center;">扬琴 10 年</div>
+		    <div class = "font3" style = "text-align: center;">合唱 6 年</div>
+			<div class = "font3" style = "text-align: center;">表演 4 年</div>
+			<div class = "font3" style = "text-align: left;">然后</div>
+			<div class = "font3" style = "text-align: center;">我决定去学计算机</div>
+		
+		    <!--
+			<div class = "font3" style = "text-align: center;">When I am doing technology, because I can feel the power of those little tiny semi-conductors and line by line codes.</div>
+			-->
+	        <div class = "font3" style = "text-align: center;"> 本科在中国和芬兰</div>
+			<div class = "font3" style = "text-align: center;"> 硕士在美国"常青藤"布朗大学</div>
+			<div class = "font3" style = "text-align: center;"> 在美国硅谷"甲骨文"做软件工程师</div>	
+		
+			<div class = "font3" style = "text-align: left;">之后</div>
+	        <div class = "font3" style = "text-align: center;">一直以来，我写了100多首歌曲</div>
+			<div class = "font3" style = "text-align: center;">自2017年，我开始录制了20多首demo</div>
+			<div class = "font3" style = "text-align: center;">并且决定从事我热爱的音乐表演</div>	
+			<br>
+			<div class = "font3">我的音乐灵感来自于"中国传统民族乐器"和"自然的声音"，表达的是"人性的哲学"和"简单的快乐"。初中开始写第一首歌，我们班的班歌，一直到现在。Demo中的背景伴奏音乐全部由计算机合成完成，因为我认为"创作音乐，并不一定依靠钢琴和吉他，因为在乐器被发明之前，人类已会高歌"</div>	
+			<br>
+			<div class = "font3">寻求唱片公司和经纪公司的合作，</div>	
+			<div class = "font3">用我独特的嗓音唱出我独特的音乐！</div>	
+            <div class = "font3"> </div>	
+		    <br>
+		    <br>			
+	  </div> 
+	  
+	  <div class="col-sm-5" id = "lifePic1Div">	  
+           <div style = "overflow: hidden;">	  
+			<img id = "lifePic" class = "profilePicCSS" style = "width:100%; height-max:600px;" src="http://www.half-a-dream.com/image/lifePic1.JPG" />
+			</div>
+	  </div> 	  
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	
+	
+	
+	<!-- MUSIC -->
+	<div class="row">
+	  <div id = "musicSection-ch" class="col-sm-12 subtitle1" style = "text-align: center; left: 46%"></div>	
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-12">
+		<div class="subtitle1-ch">音乐</div>	
+	  </div>	
+	  <br>
+	</div>
+	
+
+	
+	
+	<div class="row">
+	  <div  class="col-sm-1"></div>	
+	 
+      <div id = "gridWidth" class="col-sm-10">
+	        <div class = "font1"> 哲学, 自然, 快乐 </div>
+			<div class = "font3"> —— 李礼的音乐主题. </div>
+			<br>
+	  </div> 
+
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-12">
+		<div class="subtitle2-ch">原创音乐和demo</div>	
+	  </div>	
+	  <br>
+	</div>
+	
+	
+	<div class="row">
+	  <div  class="col-sm-1"></div>	
+	 
+      <div id = "wangyiMusicListDiv" class="col-sm-5">
+	        
+		  <iframe id = "wangyiMusicList" frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=450 src="//music.163.com/outchain/player?type=1&id=35737218&auto=0&height=430"></iframe>
+		 	
+	  </div> 
+	  <div id = "videoRow0Col2-ch" class="col-sm-5">
+			<br>
+	        <div class = "font3">旋律灵感来源于中国传统音乐，特别是五声音阶。</div>
+			<div class = "font3"> 歌词灵感来源于"人生的哲学"和"自然的规律" </div>	
+            <div class = "font3"> 伴奏音乐完全由"计算机软件"完成，因为我相信：</div>	
+			<div class = "font3"> "创作音乐，并不一定依靠钢琴和吉他，</div>	
+			<div class = "font3"> "因为在乐器被发明之前，人类已会高歌。"</div>	
+		    <br>
+		    <br>			
+			
+	  
+	      <div id = "video-koushao-ch" class = "youku">
+		     <div id = "video-koushao-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-koushao-ch-thumbnail" src="http://www.half-a-dream.com/image/koushao-thumbnail.PNG" data-video="http://player.youku.com/embed/XMzE1OTAyNjcxNg==" />			 
+		  </div> 
+		  <iframe id = "video-koushao-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>		
+		  <div class = "video-title">口哨</div>
+
+		 
+	  </div> 
+	   
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	
+	
+	
+    <div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div id = "videoRow1Col1-ch" class="col-sm-5">
+	      <div id = "video-panda-ch" class = "youku">
+		     <div id = "video-panda-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-panda-ch-thumbnail" src="http://www.half-a-dream.com/image/panda-thumbnail.PNG" data-video="http://player.youku.com/embed/XMzE1OTAyNzM3Ng==" />			 
+		  </div> 
+		     <iframe id = "video-panda-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>
+		  <div class = "video-title">熊猫</div>
+		  <div class = "space1"></div>
+	  </div> 
+	  
+	  <div id = "videoRow1Col2-ch" class="col-sm-5">
+	      <div id = "video-xiangqin-ch" class = "youku">
+		     <div id = "video-xiangqin-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-xiangqin-ch-thumbnail" src="http://www.half-a-dream.com/image/xiangqin-thumbnail.PNG" data-video="http://player.youku.com/embed/XMzE0Nzg5Njc3Mg==" />			 
+		  </div> 
+		  <iframe id = "video-xiangqin-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>		
+		  <div class = "video-title">金姐，别再催我去相亲</div>
+	  </div> 
+	  
+	  
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	
+		
+    <div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div id = "videoRow1Col1-ch" class="col-sm-5">
+	      <div id = "video-huoche-ch" class = "youku">
+		     <div id = "video-huoche-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-huoche-ch-thumbnail" src="http://www.half-a-dream.com/image/huoche-thumbnail.PNG" data-video="http://player.youku.com/embed/XMzE1OTA0MjQ4MA==" />			 
+		  </div> 
+		     <iframe id = "video-huoche-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>
+		  <div class = "video-title">火车</div>
+		  <div class = "space1"></div>
+
+	  </div> 
+	  
+	  <div id = "videoRow1Col2-ch" class="col-sm-5">
+	      <div id = "video-theday-ch" class = "youku">
+		     <div id = "video-theday-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-theday-ch-thumbnail" src="http://www.half-a-dream.com/image/theday-thumbnail.PNG" data-video="http://player.youku.com/embed/XMzE1OTA0MjYyNA==" />			 
+		  </div> 
+		  <iframe id = "video-theday-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>
+		  <div class = "video-title">The Day</div>
+	  </div> 
+	  
+	  
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	
+	
+	
+	<!-- MUSIC -->
+
+	
+	<div class="row">
+	  <div class="col-sm-12">
+		<div class="subtitle2-ch">演出</div>	
+	  </div>
+	  <br>
+	</div>
+	
+	
+    <div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div id = "videoRow1Col1-ch" class="col-sm-5">
+	      <div id = "video-yezi-ch" class = "youku">
+		     <div id = "video-yezi-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-yezi-ch-thumbnail" src="http://www.half-a-dream.com/image/yezi-thumbnail.PNG" data-video="http://player.youku.com/embed/XMjQ3NzE1NjI4NA==" />			 
+		  </div> 
+		     <iframe id = "video-yezi-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>
+		  <div class = "video-title">野子（原唱:苏运莹）</div>
+		  <div class = "space1"></div>
+	  </div> 
+	  
+	  <div id = "videoRow1Col2-ch" class="col-sm-5">
+	      <div id = "video-juanzhulian-ch" class = "youku">
+		     <div id = "video-juanzhulian-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-juanzhulian-ch-thumbnail" src="http://www.half-a-dream.com/image/juanzhulian-thumbnail.PNG" data-video="http://player.youku.com/embed/XMjQ4NTQ5ODU5Ng==" />			 
+		  </div> 
+		  <iframe id = "video-juanzhulian-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>
+		  <div class = "video-title">卷珠帘（原唱:霍尊）</div>
+	  </div> 
+	  
+	  
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	
+    <div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div id = "videoRow1Col1-ch" class="col-sm-5">
+	      <div id = "video-haoxiangni-ch" class = "youku">
+		     <div id = "video-haoxiangni-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-haoxiangni-ch-thumbnail" src="http://www.half-a-dream.com/image/haoxiangni-thumbnail.PNG" data-video="http://player.youku.com/embed/XMjQ3NzE1NjI4NA==" />			 
+		  </div> 
+		     <iframe id = "video-haoxiangni-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>
+		  <div class = "video-title">好想你（原唱:朱主爱）</div>
+		  <div class = "space1"></div>
+	  </div> 
+	  
+	  <div id = "videoRow1Col2-ch" class="col-sm-5">
+	      <div id = "video-loveyourself-ch" class = "youku">
+		     <div id = "video-loveyourself-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-loveyourself-ch-thumbnail" src="http://www.half-a-dream.com/image/loveyourself-thumbnail.PNG" data-video="http://player.youku.com/embed/XMjQ4NTQ5ODU5Ng==" />			 
+		  </div> 
+		  <iframe id = "video-loveyourself-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>
+		  <div class = "video-title">Love Yourself（原唱:Justin Bieber）</div>
+	  </div> 
+	  
+	  
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	
+	<div class="row">
+	  <div class="col-sm-12">
+		<div class="subtitle2-ch">翻唱</div>	
+	  </div>
+	  <br><br><br>
+	</div>
+	
+	
+    <div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div id = "videoRow1Col1-ch" class="col-sm-5">
+	      <div id = "video-lilian-ch" class = "youku">
+		     <div id = "video-lilian-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-lilian-ch-thumbnail" src="http://www.half-a-dream.com/image/lilian-thumbnail.PNG" data-video="http://player.youku.com/embed/XMjU1MTg2OTEwOA==" />			 
+		  </div> 
+		     <iframe id = "video-lilian-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>
+		  <div class = "video-title">莉莉安（原唱:宋东野）</div>
+		  <div class = "space1"></div>
+	  </div> 
+	  
+	  <div id = "videoRow1Col2-ch" class="col-sm-5">
+	      <div id = "video-yinweiaiqing-ch" class = "youku">
+		     <div id = "video-yinweiaiqing-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-yinweiaiqing-ch-thumbnail" src="http://www.half-a-dream.com/image/yinweiaiqing-thumbnail.PNG" data-video="http://player.youku.com/embed/XMjU1MTc5MzY3Ng==" />			 
+		  </div> 
+		  <iframe id = "video-yinweiaiqing-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>
+		  <div class = "video-title">因为爱情（原唱:王菲 陈奕迅）</div>
+	  </div> 
+	  
+	  
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	
+    <div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div id = "videoRow1Col1-ch" class="col-sm-5">
+	      <div id = "video-beitaokong-ch" class = "youku">
+		     <div id = "video-beitaokong-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-beitaokong-ch-thumbnail" src="http://www.half-a-dream.com/image/beitaokong-thumbnail.PNG" data-video="http://player.youku.com/embed/XMjQ4NzkwMDYyNA==" />			 
+		  </div> 
+		     <iframe id = "video-beitaokong-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>
+		  <div class = "video-title">感觉身体被掏空（原唱:彩虹合唱团）</div>
+		  <div class = "space1"></div>
+	  </div> 
+	  
+	  <div id = "videoRow1Col2-ch" class="col-sm-5">
+	      <div id = "video-zijiu-ch" class = "youku">
+		     <div id = "video-zijiu-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-zijiu-ch-thumbnail" src="http://www.half-a-dream.com/image/zijiu-thumbnail.PNG" data-video="http://player.youku.com/embed/XMjQ4ODU3NTAzNg==" />			 
+		  </div> 
+		  <iframe id = "video-zijiu-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe> 			
+		  <div class = "video-title">春晚自救指南（原唱:彩虹合唱团）</div>
+	  </div> 
+	  
+	  
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+		<!-- ACTING -->
+    <div class="row">
+	  <div id = "actingSection-ch" class="col-sm-12 subtitle1" style = "text-align: center; left: 46%"></div>	
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-12">
+		<div class="subtitle1-ch">表演</div>
+	  </div>	
+	  <br><br><br>
+	</div>
+	
+	
+	
+	<div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div id = "videoRow2Col1-ch" class="col-sm-5">
+	      <div id = "video-mv-ch" class = "youku">
+		     <div id = "video-mv-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-mv-ch-thumbnail" src="http://www.half-a-dream.com/image/mv-thumbnail.PNG" data-video="http://player.youku.com/embed/XMzE0ODA0Mjg4OA==" />			 
+		  </div> 
+		     <iframe id = "video-mv-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe>
+		  <div class = "video-title">男一号 ：Marcus</div>
+		  <div class = "space1"></div>
+
+	  </div> 
+	  
+	  <div id = "videoRow2Col2-ch" class="col-sm-5">
+	      <div id = "video-zuichibi-ch" class = "youku">
+		     <div id = "video-zuichibi-ch-playbutton" class="play-button"></div> 
+		     <img id = "video-zuichibi-ch-thumbnail" src="http://www.half-a-dream.com/image/zuichibi-thumbnail.PNG" data-video="http://player.youku.com/embed/XMzE0ODA2MDg0MA==" />			 
+		  </div> 
+		  <iframe id = "video-zuichibi-ch-youku" class = "youku-iframe " style = "display: none" src='' frameborder="0" allowfullscreen></iframe> 
+		  <div class = "video-title">男一号 ：诸葛亮</div>
+	  </div> 
+	  
+	  
+	  <div class="col-sm-1"></div>	
+	</div>
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+
+	
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+	
+	
+	
+	
+	<div class="row">
+	  <div class="col-sm-1"></div>	
+	  <div  class="col-sm-10">
+		
+		 <div class = "video-title">更多音乐和视频，请访问:</div>
+		 <br>
+	     <div id = "contactPicDiv2-ch" style = "text-align: center;"> 
+		    <img id = "weibo2-ch" class = "contactPicCSS" src="http://www.half-a-dream.com/image/weibo.png" />
+			&nbsp;
+			&nbsp;
+			<img id = "wangyi2-ch" class = "contactPicCSS" src="http://www.half-a-dream.com/image/wangyi.png" />
+			&nbsp;
+			&nbsp;
+            <img id = "ins2-ch" class = "contactPicCSS" src="http://www.half-a-dream.com/image/Ins.png" /> 
+			&nbsp;
+			&nbsp;
+			<img id = "youtube2-ch" class = "contactPicCSS" src="http://www.half-a-dream.com/image/youtube.png" />
+		</div>	     
+       </div>
+	   <div class="col-sm-1"></div>	
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="row"><!-- space -->
+	  <div class="col-sm-12" style = "width:100%; height: 40px;"></div>	 
+	</div>
+
+
+</div>
+
+
+  </body>
+</html>
